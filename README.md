@@ -26,7 +26,7 @@ A modern and responsive website built with **HTML** and **Tailwind CSS**, focusi
 ## 🔗 Live Demo
 
 👉 **View Live Demo:**  
-[Click here to see the demo]
+[https://yasna-aarabi.github.io/responsive-tailwind-project/]
 
 ---
 
