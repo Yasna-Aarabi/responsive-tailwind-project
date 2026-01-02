@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: thin;
+    }
+
+    @font-face {
+        font-family: thin;
+        src: url(../font/SmoochSans-VariableFont_wght.ttf)
+    }
+}
+
+@layer utilities {
+    .row {
+        @apply w-full flex flex-wrap
+    }
+}
+
+@layer components {
+    .btnCmn {
+        @apply w-fit h-12.5 rounded-[50px] uppercase px-6 flex items-center bg-red-800 text-white text-2xl gap-2 hover:bg-blue-950 hover:border hover:border-white hover:-translate-y-2 duration-500
+    }
+
+    .menuLine {
+        @apply absolute opacity-0 duration-75 bottom-0 left-0 flex w-full h-1 -skew-x-[25deg] justify-between before:content-[''] before:flex before:w-[75%] before:h-full before:bg-white after:content-[''] after:flex after:w-[18%] after:h-full after:bg-red-900
+    }
+
+    .line1 {
+        @apply h-0.5 w-full
+    }
+}
+
+
+@theme {
+    --animate-animation1: animation1 3s ease-in-out infinite;
+
+    @keyframes animation1 {
+
+        0%,
+        100% {
+            transform: translateY(0)
+        }
+
+        50% {
+            transform: translateY(20px)
+        }
+    }
+}
+
+.Haut {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 260px;
+    text-align: center;
+    background-image: linear-gradient(45deg, rgb(0, 0, 63), rgb(148, 22, 22));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
